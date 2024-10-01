@@ -7,8 +7,16 @@ pipeline "confirmation" {
     type     = "button"
     notifier = notifier[var.default_notifier]
 
-    option "Approve" {}
-    option "Deny" {}
+    option "Approve" {
+      label = "Approve"
+      value = "Approve"
+      style = "ok"
+    }
+    option "Deny" {
+      label = "Deny"
+      value = "Deny"
+      style = "alert"
+    }
   }
 
   step "message" "echo" {

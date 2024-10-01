@@ -35,4 +35,11 @@ variable "var_map_number" {
         key2 = 2
     }
 }
+
+variable "default_notifier" {
+  type        = string
+  title       = "Default Notifier"
+  description = "The name of the default notifier."
+  default     = "default"
+}
  

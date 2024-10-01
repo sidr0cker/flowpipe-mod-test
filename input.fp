@@ -1,4 +1,6 @@
-pipeline "greet" {
+pipeline "confirmation" {
+  title         = "Basic Pipeline to test input step"
+  description   = "Displays a approve / deny button to the user and displays the response."
   param "notifier" {
     default = "default"
   }

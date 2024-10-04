@@ -19,8 +19,7 @@ pipeline "confirmation" {
     }
   }
 
-  step "message" "echo" {
-    text     = "You selected `${step.input.confirm.value}`"
-    notifier = notifier[var.default_notifier]
+  output "output" {
+    value     = "You selected `${step.input.confirm.value}`"
   }
 }

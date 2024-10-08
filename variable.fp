@@ -17,7 +17,7 @@ variable "mandatory_tag_keys" {
 
 variable "var_number" {
   type        = number
-  default = 42
+  default = 24
 }
 
 variable "var_map" {

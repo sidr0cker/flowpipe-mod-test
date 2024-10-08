@@ -1,9 +1,3 @@
-trigger "schedule" "my_fifteen_minute_trigger" {
-    schedule = "15m"
-
-    pipeline = pipeline.echo
-}
-
 trigger "schedule" "my_hourly_trigger" {
     schedule = "hourly"
 

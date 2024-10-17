@@ -1,6 +1,6 @@
 variable "my_name" {
   type = string
-  default = "flowpipe"
+  default = "siddhartha"
 }
 
 variable "string_var" {

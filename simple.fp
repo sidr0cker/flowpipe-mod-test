@@ -1,8 +1,12 @@
 pipeline "simple" {
+    param "name" {
+        default = var.my_name
+    }
+
     description = "A simple pipeline with my name: ${var.my_name}"
 
     step "transform" "echo" {
-        value = "Hello World ${var.my_name}"
+        value = "Hello World ${param.name}"
 
         output "echo_1" {
             value = "echo 1"

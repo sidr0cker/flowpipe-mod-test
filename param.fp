@@ -1,14 +1,17 @@
 pipeline "simple_with_param" {
 
     param "notifier" {
+        format = text
         default = "default"
     }
 
     param "name" {
+        format = text
         default = "kenny"
     }
 
     param "list_of_names" {
+        format = json
         default = ["kenny", "kyle", "stan", "cartman"]
     }
 
